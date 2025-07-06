@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .map-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background: url('your-map-image.jpg') center/cover no-repeat;
+      border: 2px solid #333;
+    }
+
+    .direction {
+      position: absolute;
+      font-weight: bold;
+      font-size: 20px;
+      color: red;
+    }
+
+    .north { top: 5px; left: 50%; transform: translateX(-50%); }
+    .south { bottom: 5px; left: 50%; transform: translateX(-50%); }
+    .east  { right: 5px; top: 50%; transform: translateY(-50%); }
+    .west  { left: 5px; top: 50%; transform: translateY(-50%); }
+  </style>
+</head>
+<body>
+
+<div class="map-container">
+  <div class="direction north">N</div>
+  <div class="direction south">S</div>
+  <div class="direction east">E</div>
+  <div class="direction west">W</div>
+</div>
+
+</body>
+</html>
